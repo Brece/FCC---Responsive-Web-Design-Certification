@@ -1,0 +1,65 @@
+/*
+margin is set to auto --> body is displayed at the center, margins are dependent of its width
+*/
+body {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1000px;
+  background: repeating-radial-gradient(
+    rgba(255, 0, 0, 0.6),
+    rgba(0, 0, 255, 0.4)
+  );
+}
+
+/* 
+default image sizing 
+inherit position from body --> image max size doesn't exceed parent's size (width/height)
+*/
+
+#img-div {
+  width: 100%;
+  display: block;
+  position: inherit;
+}
+
+#image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h3,
+footer {
+  font-weight: bold;
+}
+
+#main {
+  margin-left: auto;
+  margin-right: auto;
+  position: inherit;
+  width: 70%;
+}
+
+header,
+footer,
+h3 {
+  text-align: center;
+}
+
+li,
+div {
+  margin: 1em 0;
+}
+
+/* 
+media query for responsive website smaller 1000px
+*/
+@media (max-width: 1000px) {
+  body {
+    width: auto;
+  }
+
+  #main {
+    width: 90%;
+  }
+}
