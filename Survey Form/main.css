@@ -1,0 +1,37 @@
+body {
+  background-color: rgba(162, 255, 190, 0.808);
+}
+
+/* profession dropdown */
+.profession {
+  position: relative;
+  display: inline-block;
+}
+
+.profession {
+  padding: 10px;
+  font-size: 0.7rem;
+  border: none;
+}
+
+.profession-content {
+  display: none;
+  position: absolute;
+  padding: 10px;
+  border-radius: 5%;
+  background-color: gray;
+  width: auto;
+  z-index: 1;
+}
+
+.profession-content p {
+  display: block;
+}
+
+.profession-content p:hover {
+  background-color: bisque;
+}
+
+.profession:hover .profession-content {
+  display: block;
+}
