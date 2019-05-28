@@ -1,5 +1,5 @@
 This is the first project "Build a Tribute Page" for the "Responsive Web Design Certification" on FreeCodeCamp.
-
+https://learn.freecodecamp.org/responsive-web-design/responsive-web-design-projects/build-a-tribute-page/
 
 
 Design layout:
@@ -24,4 +24,4 @@ User Story #8: The img element should responsively resize, relative to the width
 
 User Story #9: The img element should be centered within its parent element.
 
-https://learn.freecodecamp.org/responsive-web-design/responsive-web-design-projects/build-a-tribute-page/
+
