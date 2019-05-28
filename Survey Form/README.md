@@ -1,4 +1,7 @@
+This is the second project "Build a Survey Form" for the "Responsive Web Design Certification" on FreeCodeCamp.
 https://learn.freecodecamp.org/responsive-web-design/responsive-web-design-projects/build-a-survey-form
+
+
 
 Build a Survey Form:
 
