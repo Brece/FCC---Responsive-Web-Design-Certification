@@ -1,14 +1,52 @@
 body {
+  font-family: Arial, Helvetica, sans-serif;
   background-color: rgba(162, 255, 190, 0.808);
+  text-align: center;
+}
+
+#main {
+  position: relative;
+  max-width: 800px;
+  height: auto;
+  margin: auto;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: white;
+}
+
+/* rowTab */
+.rowTab,
+#description {
+  text-align: center;
+  margin: 15px auto;
+}
+
+/* rightTab */
+.rightTab {
+  display: inline-block;
+  text-align: right;
+  vertical-align: top;
+  width: 45%;
+}
+/* leftTab */
+.leftTab {
+  display: inline-block;
+  text-align: left;
+  width: 45%;
+}
+
+#name,
+#email,
+#number,
+#profession,
+#comment {
+  width: 85%;
 }
 
 /* profession dropdown */
-.profession {
+#profession {
   position: relative;
   display: inline-block;
-}
-
-.profession {
   padding: 10px;
   font-size: 0.7rem;
   border: none;
@@ -32,6 +70,11 @@ body {
   background-color: bisque;
 }
 
-.profession:hover .profession-content {
+#profession:hover .profession-content {
   display: block;
+}
+
+/* checkbox */
+#resources {
+  list-style: none;
 }

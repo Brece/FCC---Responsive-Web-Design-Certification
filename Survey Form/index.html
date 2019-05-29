@@ -11,7 +11,7 @@
     <header>
       <h1 id="title">Learn to Code</h1>
     </header>
-    <main>
+    <div id="main">
       <div>
         <p id="description">
           Tell us about your goals at becoming a programmer
@@ -20,8 +20,8 @@
       <div>
         <form id="survey-form" action="#">
           <div class="rowTab">
-            <div>
-              <label id="name-label" for="name">* Name</label>
+            <div class="rightTab">
+              <label id="name-label" for="name">* Name:</label>
             </div>
             <div class="leftTab">
               <input
@@ -34,12 +34,12 @@
             </div>
           </div>
           <div class="rowTab">
-            <div>
-              <label id="email-label" for="email">* Email</label>
+            <div class="rightTab">
+              <label id="email-label" for="email">* Email:</label>
             </div>
             <div class="leftTab">
               <input
-                type="text"
+                type="email"
                 name="email"
                 id="email"
                 placeholder="Email"
@@ -48,8 +48,8 @@
             </div>
           </div>
           <div class="rowTab">
-            <div>
-              <label id="number-label" for="number">* Age</label>
+            <div class="rightTab">
+              <label id="number-label" for="number">* Age:</label>
             </div>
             <div class="leftTab">
               <input
@@ -64,13 +64,11 @@
             </div>
           </div>
           <div class="rowTab">
-            <div>
-              <label id="profession" for="profession"
-                >In which field do you wish to be active in 5 years?</label
-              >
+            <div class="rightTab">
+              <label>In which field do you wish to be active in 5 years?</label>
             </div>
             <div class="leftTab">
-              <div class="profession">
+              <div id="profession">
                 <button>Select</button>
                 <div class="profession-content">
                   <p>Web Development</p>
@@ -82,25 +80,121 @@
             </div>
           </div>
           <div class="rowTab">
-            <div>
-              <p>Do you think a college degree is essential to succeed?</p>
+            <div class="rightTab">
+              <label>
+                Do you think a college degree is essential to succeed?</label
+              >
             </div>
             <div class="leftTab">
-              <input type="radio" name="degree" id="degree" />
+              <input type="radio" name="degree" id="degree" value="degree" />
               <label for="degree">Yes, a college degree is essential.</label
               ><br />
-              <input type="radio" name="degree" id="maybe" />
+              <input type="radio" name="degree" id="maybe" value="maybe" />
               <label for="maybe">Maybe, it helps with job applications.</label
               ><br />
-
-              <input type="radio" name="degree" id="experience" />
+              <input
+                type="radio"
+                name="degree"
+                id="experience"
+                value="experience"
+              />
               <label for="experience"
                 >No, hands-on experience is more important.</label
               >
             </div>
           </div>
+          <div class="rowTab">
+            <div class="rightTab">
+              <label for="dropdown"
+                >What do like the most about Programming?</label
+              >
+            </div>
+            <div class="leftTab">
+              <select name="favourite" id="dropdown">
+                <option value="" disabled selected>Select an option</option>
+                <option value="creativity">Being creativ.</option>
+                <option value="remote">Work remote.</option>
+                <option value="salary">High salary.</option>
+                <option value="passion">It's my passion.</option>
+                <option value="skill">Nice-to-have skillset</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="rowTab">
+            <div class="rightTab">
+              <label
+                >Resources that you use for studying (Check all that
+                apply):</label
+              >
+            </div>
+            <div class="leftTab">
+              <ul id="resources">
+                <li>
+                  <label>
+                    <input type="checkbox" name="learning" value="1" />Books
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="checkbox" name="learning" value="2" />Youtube
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="checkbox" name="learning" value="3" />Online
+                    courses
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="checkbox" name="learning" value="4" />Bootcamp
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="checkbox" name="learning" value="5" />Stack
+                    Overflow
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="checkbox" name="learning" value="6" />Mentor
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input
+                      type="checkbox"
+                      name="learning"
+                      value="7"
+                    />Internship
+                  </label>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="rowTab">
+            <div class="rightTab">
+              <label for="comment">
+                Tell us about your story and challenges in becoming Programmer:
+              </label>
+            </div>
+            <div class="leftTab">
+              <textarea
+                name="comment"
+                id="comment"
+                cols="50"
+                rows="5"
+                placeholder="What's your story? ..."
+              ></textarea>
+            </div>
+          </div>
+          <div>
+            <input type="submit" id="submit" />
+          </div>
         </form>
       </div>
-    </main>
+    </div>
   </body>
 </html>
